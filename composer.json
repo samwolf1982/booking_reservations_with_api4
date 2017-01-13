@@ -1,0 +1,14 @@
+{
+
+ "autoload": {
+       "psr-4": { "CosmosLibs\\": "locallibs/cosmos/"
+                    }
+  },
+
+    "require": {
+        "guzzlehttp/guzzle": "~6.0",
+  "slim/pdo": "^1.10",
+  "webmozart/json": "^1.2",
+  "aura/session": "^2.1"
+    }
+}

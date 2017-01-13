@@ -1,0 +1,65 @@
+<!-- panel -->
+													<div class="panel-default panel-faq">
+														<!-- panel-heading -->
+														<div class="panel-heading">
+															<a data-toggle="collapse" data-parent="#accordion" href="#map__<?php echo $hnum;?>">
+																<h5 class="panel-title">Show hotel on map<span class="pull-right"><i class="fa fa-plus"></i></span></h5>
+															</a>
+														</div>
+														<!-- panel-heading -->
+														<div id="map__<?php echo $hnum;?>" class="panel-collapse collapse">
+															<!-- panel-body -->
+															<div class="panel-body">
+																<script type="text/javascript">
+																map = new GMaps({
+																	div: '#map_<?php echo $hnum;?>',
+																	zoom: 16,
+																	lat: <?php echo $row["Latitude"];?>,
+																	lng: <?php echo $row["Longitude"];?>
+																	/*
+																	click: function(e) {
+																		alert('click');
+																	},
+																	dragend: function(e) {
+																		alert('dragend');
+																	}
+																	*/
+																});
+																GMaps.geolocate({
+																	success: function(position) {
+																		map.setCenter(position.coords.latitude, position.coords.longitude);
+																	},
+																	error: function(error) {
+																		alert('Geolocation failed: '+error.message);
+																	},
+																	not_supported: function() {
+																		alert("Your browser does not support geolocation");
+																	}
+																	/*
+																	always: function() {
+																		alert("Done!");
+																	}
+																	*/
+																});
+																map.addMarker({
+																	lat: <?php echo $row["Latitude"];?>,
+																	lng: <?php echo $row["Longitude"];?>,
+																	title: '<?php echo $row["HotelName"];?>'
+																	/*
+																	click: function(e) {
+																		alert('You clicked in this marker');
+																	},
+																	infoWindow: {
+																		content: '<p>Home, sweet home...</p>'
+																	}
+																}
+																*/
+															});
+																</script>
+																<div id="map_<?php echo $hnum;?>">
+																	
+																</div>
+															</div><!-- panel-body -->
+														</div>
+													</div>
+													<!-- panel -->

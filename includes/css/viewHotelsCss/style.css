@@ -1,0 +1,126 @@
+body {
+
+	font-family: 'Open Sans',"Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+.search-line {
+
+	border-bottom: 1px solid #bdbdbd;
+
+	border-top: 1px solid #bdbdbd;
+
+}
+
+.search-container {
+
+	padding-left: 0px;
+
+	padding-right: 0px;
+
+}
+.change-search, .change-search:hover, .change-search:focus {
+	color: white !important;
+}
+.search-info {
+
+	float: left;
+
+	line-height: 40px;
+
+}
+
+.reserv-details {
+
+	display: inline-block;
+
+	margin: 0px 10px;
+
+}
+
+.room-property {
+
+	padding-left: 10px;
+
+}
+
+.change-search,
+
+.change-search:hover,
+
+.change-search:focus {
+
+	background: #1e8cbe;
+
+	color: white;
+
+	font-size: 12px;
+
+	font-weight: 600;
+
+	height: 30px;
+
+	line-height: 30px;
+
+	display: inline-block;
+
+	padding: 0px 12px;
+
+	text-decoration: none;
+
+	border-radius: 3px;
+
+	font-family: 'Open Sans';
+
+}
+
+.change-icon {
+
+	font-size: 9px;
+
+	padding-left: 12px;
+
+	padding-right: 2px;
+
+}
+
+
+
+.backhome-result {
+
+	height: 45px;
+
+    line-height: 35px;
+
+}
+
+.back-home {
+
+	padding: 0px;
+
+}
+
+.backhome-text {
+
+	font-weight: 600;
+
+	font-family: 'Open Sans';
+
+	float: left;
+
+}
+
+.result-number {
+
+	color: #999;
+
+}
+
+.result-city {
+
+	color: #333;
+
+	margin-left: 15px;
+
+}
+

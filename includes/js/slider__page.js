@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".pgwSlideshow").pgwSlideshow({transitionEffect:"fading"}),$("#lightgallery").lightGallery({}),$(".fullscreen__icon").click(function(){$(".ps-selected").parents("li").click()})});

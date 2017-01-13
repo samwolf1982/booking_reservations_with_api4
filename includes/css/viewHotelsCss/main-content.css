@@ -1,0 +1,296 @@
+.hotels-result {
+
+	margin-left: 0px;
+
+	margin-top: 25px;
+
+}
+
+.holel-media-item {
+
+	border: 1px solid #ccc;
+
+	border-radius: 3px;
+
+}
+
+.hotel-image {
+
+	height: 198px !important;
+
+	width: 100%;
+
+	width: 189px;
+
+}
+
+.hotel-image-link {
+
+	padding-right: 0px !important;
+
+}
+
+.hotel-header {
+
+	margin-top: 10px;
+
+}
+
+.hotel-header-link {
+
+	font-size: 22px;
+
+	color: #003366 !important;
+
+	text-decoration: none !important;
+
+	margin-right: 5px;
+
+	display: inline-block;
+
+}
+
+.hotel-stars {
+
+	background: url(/images/master-sprite.png) 0 -44px;
+
+	width: 88px;
+
+	height: 16px;
+
+	display: inline-block;
+
+}
+
+.hotel-two-stars {
+
+	background: url(/images/master-sprite.png) 0 -60px;
+
+	width: 88px;
+
+	height: 16px;
+
+	display: inline-block;
+
+}
+.hotel-three-stars {
+
+	background: url(/images/master-sprite.png) 0 -76px;
+
+	width: 88px;
+
+	height: 16px;
+
+	display: inline-block;
+
+}
+
+.hotel-four-stars {
+
+	background: url(/images/master-sprite.png) 0 -92px;
+
+	width: 88px;
+
+	height: 16px;
+
+	display: inline-block;
+
+}
+
+.hotel-five-stars {
+
+	background: url(/images/master-sprite.png) 0 -108px;
+
+	width: 88px;
+
+	height: 16px;
+
+	display: inline-block;
+
+}
+
+.address-line {
+
+	float: left;
+
+	font-size: 12px !important;
+
+	color: #666 !important;
+
+	margin-right: 10px;
+
+}
+
+.map-icon {
+
+	color: #336699 !important;
+
+	font-size: inherit;
+
+}
+
+.map-text {
+
+	color: #336699 !important;
+
+}
+
+.hotel-location {
+
+	font-size: 12px;
+
+	color: #666 !important;
+
+}
+
+.hotel-details {
+
+	margin-top: 20px;
+
+}
+
+.details-info {
+
+	font-size: 13px;
+
+    color: #000;
+
+    font-weight: 600;
+
+    text-decoration: none !important;
+
+}
+
+.details-info:hover {
+
+	color: #0a3d6e;
+
+}
+
+.price-container {
+
+	padding-left: 0px;
+
+}
+
+.price-box {
+
+	margin-top: 10px;
+
+	text-align: center;
+
+	margin-right: 11px;
+
+}
+
+.price-total {
+
+	font-size: 12px;
+
+}
+
+.book-now-btn {
+
+	text-align: center;
+
+	margin-right: 20px;
+
+}
+
+.price-text {
+
+	margin-bottom: 18px;
+
+	font-size: 20px;
+
+	font-weight: 600;
+
+	font-family: 'Helvetica',arial;
+
+}
+
+.text-no-link {
+
+	color: #3a8c00;
+
+}
+
+.register-text {
+
+	color: #337ab7;
+
+    text-decoration: none !important;
+
+}
+
+.book-btn {
+
+	font: 700 12px/26px arial;
+
+	color: white;
+
+	background: linear-gradient(to bottom, #3499ff 0%, #247cd7 100%);
+
+	width: 145.5px;
+
+	border-radius: 2px;
+
+	border: none;
+
+	height: 35px;
+
+}
+
+
+
+.filter-btn {
+
+	font: 700 12px/26px arial;
+
+	color: white;
+
+	background: linear-gradient(to bottom, #3499ff 0%, #247cd7 100%);
+
+	width: 100%;
+
+	border-radius: 2px;
+
+	border: none;
+
+	height: 35px;
+
+}
+
+.distance-body {
+	width: 250px;
+	display: block;
+}
+
+.search-result{
+	display: none;
+}
+
+
+
+.hotel-header-link2 {
+    /* font-size: 22px; */
+    color: #003366 !important;
+    text-decoration: none !important;
+    margin-right: 5px;
+    display: inline-block;
+        padding: 0em 1em;
+}
+
+.header-info{
+	margin-top: 0.5em;
+}
+.info-body{
+	padding: 1em;
+}
+
+
+.hotel-header{
+	padding-top: 0;
+}
+/*acordeon */
+

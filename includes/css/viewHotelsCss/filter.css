@@ -1,0 +1,86 @@
+.filter-container {
+	padding-left: 0px;
+}
+.hotel-name-input {
+	width: 270px !important;
+	border-radius: 0;
+	margin-bottom: 10px;
+}
+.star-header {
+	margin-bottom: 10px;
+}
+.star-header-text {
+	margin-left: 9px;
+}
+.star-label {
+	display: block;
+	cursor: pointer;
+	margin-bottom: 12px;
+}
+.star-text {
+	margin-left: 5px;
+	width: 50px;
+	display: inline-block;
+	margin-right: 15px;
+	font-size: 14px;
+	font-weight: 500;
+}
+.first-sprite {
+	width: 90px;
+	background: url(/images/master-sprite.png) 0px -108px;
+	height: 15px;
+	display: inline-block;
+}
+.second-sprite {
+	width: 90px;
+	background: url(/images/master-sprite.png) 0px -92px;
+	height: 15px;
+	display: inline-block;
+}
+.third-sprite {
+	width: 90px;
+	background: url(/images/master-sprite.png) 0px -76px;
+	height: 15px;
+	display: inline-block;
+}
+.fourth-sprite {
+	width: 90px;
+	background: url(/images/master-sprite.png) 0px -60px;
+	height: 15px;
+	display: inline-block;
+}
+.fifth-sprite {
+	width: 90px;
+	background: url(/images/master-sprite.png) 0px -44px;
+	height: 15px;
+	display: inline-block;
+}
+.sixth-sprite {
+	width: 90px;
+	background: url(/images/master-sprite.png) 0px -193px;
+	height: 15px;
+	display: inline-block;
+}
+.hotels-count {
+	float: right;
+	margin-right: 10px;
+	font-size: 14px;
+	font-weight: 500;
+}
+@media (max-width: 1200px){
+  .star-text {
+	margin-right: 5px;
+  }
+  .hotels-count {
+	margin-right: 0px;
+  }
+  .filter-container {
+  	padding-right: 0px;
+  }
+}
+@media (max-width: 700px){
+  .hotel-name-input {
+  	// width: 674px !important;
+  	max-width: 100%;
+  }
+}

@@ -1,0 +1,175 @@
+																<script type="text/javascript">
+																$(window).load(function(){
+																	(function() {
+																		$("#hotel_image_slider_<?php echo $hnum;?>").owlCarousel({
+																			items:3,
+																			nav:true,
+																			autoplay:true,
+																			dots:true,
+																			autoplayHoverPause:true,
+																			nav:true,
+																			navText: [
+																			"<i class='fa fa-angle-left '></i>",
+																			"<i class='fa fa-angle-right'></i>"
+																			],
+																			responsive: {
+																				0: {
+																					items: 1,
+																					slideBy:1
+																				},
+																				480: {
+																					items: 2,
+																					slideBy:1
+																				},
+																				991: {
+																					items: 6,
+																					slideBy:1
+																				},
+																			}            
+
+																		});
+
+
+
+																	}());
+																});
+</script>
+
+
+					<!--responseId: <?php //echo $checkAvailability->responseId?><br/>
+					searchId: <?php //echo $checkAvailability->searchId?><br/>-->
+					totalFound: <?php echo $checkAvailability->totalFound?><br/>
+					<?php
+
+					?>
+					<table border="1">
+						<thead>
+							<tr>
+								<th>processId</th>
+								<th>hotelCode</th>
+								<th>availabilityStatus</th>
+								<th>totalPrice</th>
+								<th>totalTax</th>
+								<th>totalSalePrice</th>
+								<th>currency</th>
+								<th>boardType</th>
+								<th>Room Data</th>
+							</tr>
+						</thead>
+						<tbody>
+							<?php
+							if (is_object($checkAvailability->availableHotels)) {
+								$hotelResponse[] = $checkAvailability->availableHotels;
+							} else {
+								$hotelResponse = $checkAvailability->availableHotels;
+							}
+							foreach ((array)$hotelResponse as $hnum => $hotel) {
+
+								$new_data = $hotel->hotelCode;
+      //echo $new_data;
+                //$sql = "SELECT * FROM `hotels_list` WHERE `HotelCode`='". $new_data ."'";
+
+								$sql = "SELECT *
+								FROM `hotels_list`
+								INNER JOIN `description_list` ON hotels_list.HotelCode=description_list.HotelCode
+								INNER JOIN `amenities_list` ON hotels_list.HotelCode=amenities_list.HotelCode
+								WHERE hotels_list.HotelCode='". $new_data ."'";
+                //echo $sql;
+      //echo $sql;
+								$result = $conn->query($sql);
+
+								if ($result->num_rows > 0) {
+
+    // output data of each row
+									while($row = $result->fetch_assoc()) {
+										$images = unserialize($row["HotelImages"]);
+                    //print_r($images);
+										foreach ($images as $url){
+											echo "<img src='".$url."'/>";
+										}
+										echo "star rating: " . $row["StarRating"]. "Hotel Info: " . $row["HotelInfo"]. 
+										"Hotel PAmenities: " .$row["PAmenities"]. "Hotel RAmenities: " .$row["RAmenities"].  "<br><br><br><br><br>";
+
+									}
+								} else {
+									echo "0 results"."<br>";
+								}
+
+								?>
+
+								<tr>
+									<td><?php echo $hotel->processId?></td>
+									<td><?php echo $hotel->hotelCode?></td>
+									<td><?php echo $hotel->availabilityStatus?></td>
+									<td><?php echo $hotel->totalPrice?></td>
+									<td><?php echo $hotel->totalTax?></td>
+									<td><?php echo $hotel->totalSalePrice?></td>
+									<td><?php echo $hotel->currency?></td>
+									<td><?php echo $hotel->boardType?></td>
+									<td>
+										<?php
+										if (is_object($hotel->rooms)) {
+											$roomResponse[] = $hotel;
+										} else {
+											$roomResponse = $hotel->rooms;
+										}
+										foreach ((array)$roomResponse as $rnum => $room) {
+											?>
+											<table border="1" style="margin: 10px; width: 300px; float: left;">
+												<tr>
+													<td><b>Room <?php echo($rnum + 1);?> Category</b></td>
+													<td><?php echo $room->roomCategory;?></td>
+												</tr>
+												<tr>
+													<td><b>Total Room Rate</b></td>
+													<td><?php echo $room->totalRoomRate;?></td>
+												</tr>
+												<tr>
+													<td><b>Paxes</b></td>
+													<td>
+														<?php
+														if (is_object($room->paxes)) {
+															$roomsInfo[] = $room->paxes;
+														} else {
+															$roomsInfo = $room->paxes;
+														}
+														if (is_object($room->ratesPerNight)) {
+															$ratesPerNight[] = $room->ratesPerNight;
+														} else {
+															$ratesPerNight = $room->ratesPerNight;
+														}
+
+														foreach ((array)$roomsInfo as $pnum => $pax) {
+															echo $pax->paxType . " (" . $pax->age . ")<br/>";
+														}
+														?>
+													</td>
+												</tr>
+												<tr>
+													<td><b>ratesPerNight</b></td>
+													<td>
+														<?php
+														foreach ((array)$ratesPerNight as $rpnum => $price) {                          
+															echo $price->date;
+															?> (<?php echo $price->amount;?>)<br/>
+															<?php
+														}
+														?>
+													</td>
+												</tr>
+											</table>
+											<?php
+											unset($ratesPerNight);
+											unset($roomsInfo);
+										}
+										unset($roomResponse);
+										?>
+									</td>
+								</tr>
+								<?php
+							}
+							$conn->close();
+
+							?>
+						</tbody>
+					</table>

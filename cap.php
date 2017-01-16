@@ -5,7 +5,7 @@ if(!empty($_POST)) extract($_POST);
 <!DOCTYPE html>
 <html lang="en">
      <head>
-     <title>BookingRoll | Turlar - <?echo $Tour;?></title>
+     <title>BookingRoll | Turlar - <?php echo 'This page is under construction' ;?></title>
      <meta charset="utf-8">
      <meta name = "format-detection" content = "telephone=no" />
 	 <?php include ('includes/php/head.php'); ?>

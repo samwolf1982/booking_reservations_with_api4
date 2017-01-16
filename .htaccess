@@ -15,7 +15,8 @@ RewriteCond %{REQUEST_URI} !^/privacy_policy.php
 RewriteCond %{REQUEST_URI} !^/provision.php
 RewriteCond %{REQUEST_URI} !^/booking.php
 RewriteCond %{REQUEST_URI} !^/chancel_book.php
-RewriteCond %{REQUEST_URI} !^/
+RewriteCond %{REQUEST_URI} !^/index.php
+RewriteCond %{REQUEST_URI} !^/$
 
 
 

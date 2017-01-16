@@ -15,7 +15,9 @@
           <nav class="horizontal-nav full-width horizontalNav-notprocessed">
             <ul class="sf-menu">
              <li <?if(basename($_SERVER["SCRIPT_FILENAME"], '.php') == '') {;?>class="current"<?}?>><a href="http://www.bookingroll.com/"><span class="fa fa-home"></span>Ana Sayfa</a></li>
-             <li <?if(basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'Turlar') {;?>class="current"<?}?>><a href="Turlar.php"><span class="fa fa-globe"></span>Turlar<strong></strong></a>
+
+<!--              naw menu UNCOMENT !!!!!!!!!!!!!! -->
+          <!--    <li <?if(basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'Turlar') {;?>class="current"<?}?>><a href="Turlar.php"><span class="fa fa-globe"></span>Turlar<strong></strong></a>
 				<ul>
                   <li><a href="Turlar.php?t=yurtdisi">Yurtdışı Turlar</a></li>
                   <li><a href="Turlar.php?t=yurtici">Yurtiçi Turlar</a></li>
@@ -28,7 +30,7 @@
                     </ul>
                   </li>
                 </ul>
-			 </li>
+			 </li> -->
              <li <?if(basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'Otel') {;?>class="current"<?}?>><a href="/Hotels.php"><span class="fa fa-bed"></span>Otel</a></li>
              <li <?if(basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'Ucak') {;?>class="current"<?}?>><a href="Ucak.php"><span class="fa fa-plane"></span>Uçak</a></li>
              <li <?if(basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'Gemi') {;?>class="current"<?}?>><a href="Gemi.php"><span class="fa fa-ship"></span>Gemi</a></li>

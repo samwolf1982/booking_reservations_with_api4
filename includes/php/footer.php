@@ -27,7 +27,7 @@ require_once  'translate.php';
 				</div>
 				<div class="col-md-4">
 					<a href="Gizlilik.php">
-						<h4 class="custom_footer_header">Güvenlik Politikası</h4>
+						<h4 class="custom_footer_header">Security Policy</h4>
 					</a>
 
 
@@ -44,19 +44,19 @@ require_once  'translate.php';
 							</p>
 						</div>
 					</a>
+					<br><br>
 
 					
 
-					<a href="#">
+					<a href="/return_policy.php">
 						<div class="f_img_block">
 							<img src="images/f_img1.jpg" alt="">							
 						</div>
 						<div class="extra_wrapper">
 							<strong class="col4">
-								<p class="mb0">Gizlilik Taahhütü</p>
+								<p class="mb0">Terms & Conditions</p>
 							</strong>
-							<p class="description_p">Bu sayfada yer alan gizlilik kuralları yaptığınız alışverişlerde ve vermiş 
-								olduğunuz kişisel bilgilerdeki güvenlik ve gizlilik sınırlarını belirlemek amacı ile konulmuştur.
+							<p class="description_p">Please read our terms and conditions carefully
 							</p>
 						</div>
 					</a>
@@ -82,10 +82,10 @@ require_once  'translate.php';
 -->
 				</div>
 				<div class="col-md-4 contact_info">
-					<h4 class="custom_footer_header">İletişim</h4>
+					<h4 class="custom_footer_header">Contacts</h4>
 					<address>
-						<p>POLATKAN TOURISM &amp; TRAVEL AGENCY</p>
-						<p>Bedreddin Demirel Cad.</p>
+						<p>POLATKAN TOURISM</p>
+						<p></p>
 						<p>Kumsal / Lefkoşa / KKTC</p> 
 						<p class="col4"><span class="footer_phone"><i style="padding-top: 9px;" class="fa fa-phone"></i></span><span class="footer_phone_number">0090 392 444 0 222</span></p>
 					</address>

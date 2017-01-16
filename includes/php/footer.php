@@ -48,7 +48,7 @@ require_once  'translate.php';
 
 					
 
-					<a href="/return_policy.php">
+					<a target="_blank" href="/return_policy.php" style="text-decoration: none;">
 						<div class="f_img_block">
 							<img src="images/f_img1.jpg" alt="">							
 						</div>

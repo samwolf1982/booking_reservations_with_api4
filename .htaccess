@@ -10,7 +10,7 @@ RewriteCond %{REQUEST_URI} !^/get_hotel_info.php
 RewriteCond %{REQUEST_URI} !^/HotelRooms.php
 RewriteCond %{REQUEST_URI} !^/HotelBooking.php
 RewriteCond %{REQUEST_URI} !^/provision.php
-RewriteCond %{REQUEST_URI} !^/provision.php
+RewriteCond %{REQUEST_URI} !^/return_policy.php
 RewriteCond %{REQUEST_URI} !^/privacy_policy.php
 RewriteCond %{REQUEST_URI} !^/provision.php
 RewriteCond %{REQUEST_URI} !^/booking.php

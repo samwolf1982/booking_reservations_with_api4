@@ -8,19 +8,45 @@ require_once  'translate.php';
 			<div class="row">
 				<div class="col-md-4">
 					<h4 class="custom_footer_header"><?php t('About us')?></h4>
-					<p class="description_p">Yılların verdiği tecrübe, bilgi birikimi, güven ve müşteri 
-						memnuniyetini yepyeni bir hizmet anlayışıyla Bookingroll.com'da birleştiren Polatkan Turizm, 
-						en uygun fiyat, en bol seçenek ve "Tatil, Her Zaman!" sloganıyla, 
-						cep telefonunuzdan bile tatilinizi planlayabileceğiniz bir arayüzle karşınızda. 
-						Bookingroll, tüm dünya otellerini sizlere en uygun fiyatlarla sunarken, yurtiçi ve yurtdışı turlar, 
-						gemi turları, uçak rezervasyonu, araç kiralama ve sigorta gibi tatiliniz için aklınıza gelebilecek 
-						tüm hizmetler ile bir tık uzağınızda hizmetinizde.
+					<p class="description_p">
+    <ul>
+    	<li><b>-Many years of experience</b></li>
+    	<li>-customer satisfaction</li>
+    	<li>-Been reliable</li>
+    	<li>-A brand new service mentality</li>
+    	<li>-Best prices</li>
+    	<li>-The most abundant option with best prices of world wide hotels, domestic and abroad tour, cruises, flight ticked, rent a car, travel insurance</li>
+
+    </ul>
+    <p> HOLIDAY, EVERYTIME</p>
+
+
+
+
 					</p>
 				</div>
 				<div class="col-md-4">
 					<a href="Gizlilik.php">
 						<h4 class="custom_footer_header">Güvenlik Politikası</h4>
 					</a>
+
+
+
+	<a href="http://www.letsgotours.com/en/corporate/34/privacy-policy" target="_blank" style="text-decoration: none;">
+						<div class="f_img_block">
+							<img src="images/f_img2.jpg" alt="">
+						</div>
+						<div class="extra_wrapper">
+							<strong class="col4">
+								<p class="mb0">Cancellation and Refund policy</p>
+							</strong>
+							<p class="description_p">Your privacy is important for us. Please read our  detailed  policy.
+							</p>
+						</div>
+					</a>
+
+					
+
 					<a href="#">
 						<div class="f_img_block">
 							<img src="images/f_img1.jpg" alt="">							
@@ -34,19 +60,9 @@ require_once  'translate.php';
 							</p>
 						</div>
 					</a>
-					<a href="#">
-						<div class="f_img_block">
-							<img src="images/f_img2.jpg" alt="">
-						</div>
-						<div class="extra_wrapper">
-							<strong class="col4">
-								<p class="mb0">İptal ve İade Koşulları</p>
-							</strong>
-							<p class="description_p">Yanlış anlaşılmalardan kaçınmak için tüm değişiklikler ve iptaller Bookingroll
-								tarafından yapılmalıdır. Değişikliğin veya iptalin vaktinde yapılmış sayılabilmesi için bildirinin... 
-							</p>
-						</div>
-					</a>
+
+
+				
 <!--
 					<a href="IptalIadeKosullari.php">
 						<div class="clear cl2"></div>
@@ -71,7 +87,7 @@ require_once  'translate.php';
 						<p>POLATKAN TOURISM &amp; TRAVEL AGENCY</p>
 						<p>Bedreddin Demirel Cad.</p>
 						<p>Kumsal / Lefkoşa / KKTC</p> 
-						<p class="col4"><span class="footer_phone"><i class="fa fa-phone"></i></span><span class="footer_phone_number">0090 392 444 0 222</span></p>
+						<p class="col4"><span class="footer_phone"><i style="padding-top: 9px;" class="fa fa-phone"></i></span><span class="footer_phone_number">0090 392 444 0 222</span></p>
 					</address>
 					<div class="socials">
 						<a href="https://www.facebook.com/Bookingroll-241995219510007" target="_blank" class="fa fa-facebook"></a>

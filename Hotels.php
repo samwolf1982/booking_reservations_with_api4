@@ -254,8 +254,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
 											<label for="check_in">Check In :</label><br>
 											<div class='input-group date'>
 									<input name="check_in" id="check_in" type='text' class="form-control"  required="required" readonly/>
-												<span class="input-group-addon">
-													<span class="glyphicon glyphicon-calendar"></span>
+											<span class="input-group-addon">
+													<label for="check_in">	<span class="glyphicon glyphicon-calendar"></span></label>
 												</span>
 											</div>
 										</div>
@@ -266,7 +266,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 											<div class='input-group date'>
 												<input name="check_out" id="check_out" type='text' class="form-control" required="required" readonly/>
 												<span class="input-group-addon">
-													<span class="glyphicon glyphicon-calendar"></span>
+												<label for="check_out">	<span class="glyphicon glyphicon-calendar"></span></label>
 												</span>
 											</div>
 										</div>
